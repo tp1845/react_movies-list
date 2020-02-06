@@ -1,0 +1,67 @@
+{
+  "name": "react_movies-list-add-form",
+  "homepage": ".",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [],
+  "author": "Mate Academy",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0"
+  },
+  "devDependencies": {
+    "@mate-academy/eslint-config-react": "*",
+    "@mate-academy/stylelint-config": "*",
+    "eslint": "^6.8.0",
+    "gh-pages": "^2.2.0",
+    "husky": "^4.0.10",
+    "lint-staged": "^9.5.0",
+    "stylelint": "^13.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint-js": "eslint --ext .jsx,.js ./src/ --fix",
+    "lint-css": "stylelint src/**/*.css src/**/*.scss --fix",
+    "lint": "npm run lint-js && npm run lint-css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint",
+      "git add"
+    ],
+    "*.js": [
+      "eslint",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
