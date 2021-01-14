@@ -5,7 +5,7 @@
 
 ## Task
 You are given movies loaded from API and the initial markup.
-- [] Split the markup into `MoviesList` and `MovieCard` components
-- [] `App` should pass the `moviesFromServer` to the `MoviesList` as a prop
-- [] `MoviesList` should render a `MovieCard` per each movie
-- [] All the fields in the `movie` except the `description` are required
+- [x] Split the markup into `MoviesList` and `MovieCard` components
+- [x] `App` should pass the `moviesFromServer` to the `MoviesList` as a prop
+- [x] `MoviesList` should render a `MovieCard` per each movie
+- [x] All the fields in the `movie` except the `description` are required
