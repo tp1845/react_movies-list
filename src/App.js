@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import moviesFromServer from './api/movies';
+// import moviesFromServer from './api/movies';
 
 export const App = () => (
   <div className="page">
@@ -10,6 +10,7 @@ export const App = () => (
           <div className="card-image">
             <figure className="image is-4by3">
               <img
+                // eslint-disable-next-line max-len
                 src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
                 alt="Film logo"
               />
@@ -20,7 +21,7 @@ export const App = () => (
             <div className="media">
               <div className="media-left">
                 <figure className="image is-48x48">
-                  <img src="/images/imdb-logo.jpeg" alt="imdb" />
+                  <img src="images/imdb-logo.jpeg" alt="imdb" />
                 </figure>
               </div>
 
@@ -43,6 +44,7 @@ export const App = () => (
           <div className="card-image">
             <figure className="image is-4by3">
               <img
+                // eslint-disable-next-line max-len
                 src="https://m.media-amazon.com/images/M/MV5BMTY4NjQ5NDc0Nl5BMl5BanBnXkFtZTYwNjk5NDM3._V1_.jpg"
                 alt="Film logo"
               />
@@ -53,7 +55,7 @@ export const App = () => (
             <div className="media">
               <div className="media-left">
                 <figure className="image is-48x48">
-                  <img src="/images/imdb-logo.jpeg" alt="imdb" />
+                  <img src="images/imdb-logo.jpeg" alt="imdb" />
                 </figure>
               </div>
 
@@ -76,6 +78,7 @@ export const App = () => (
           <div className="card-image">
             <figure className="image is-4by3">
               <img
+                // eslint-disable-next-line max-len
                 src="https://m.media-amazon.com/images/M/MV5BMTY4YWMzMTMtZjUyOS00OGY1LTljMGUtOWU5ZjYzMjc2ZTMwXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_SY1000_CR0,0,701,1000_AL_.jpg"
                 alt="Film logo"
               />
@@ -110,6 +113,7 @@ export const App = () => (
           <div className="card-image">
             <figure className="image is-4by3">
               <img
+                // eslint-disable-next-line max-len
                 src="https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SY1000_SX675_AL_.jpg"
                 alt="Film logo"
               />
@@ -142,6 +146,7 @@ export const App = () => (
           <div className="card-image">
             <figure className="image is-4by3">
               <img
+                // eslint-disable-next-line max-len
                 src="https://m.media-amazon.com/images/M/MV5BMTI1MDk4MzA2OF5BMl5BanBnXkFtZTYwMjQ3NDc3._V1_.jpg"
                 alt="Film logo"
               />
@@ -162,6 +167,7 @@ export const App = () => (
             </div>
 
             <div className="content">
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               Two women troubled with guy-problems swap homes in each other's
               countries, where they each meet a local guy and fall in love.
               <br />
