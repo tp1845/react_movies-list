@@ -9,7 +9,6 @@
     "@types/node": "^12.20.18",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
-    "bulma": "^0.8.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -18,22 +17,29 @@
   },
   "devDependencies": {
     "@mate-academy/eslint-config-react-typescript": "*",
+    "@mate-academy/scripts": "^0.9.0",
     "@mate-academy/students-ts-config": "*",
     "@mate-academy/stylelint-config": "*",
+    "cypress": "^5.6.0",
     "eslint": "^7.32.0",
+    "eslint-plugin-cypress": "^2.11.2",
     "gh-pages": "^3.2.3",
     "husky": "^4.3.8",
     "lint-staged": "^11.1.1",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0",
     "stylelint": "^13.13.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint-js": "eslint --ext .ts,.tsx,.js,.jsx ./src/ --fix",
-    "lint-css": "stylelint src/**/*.css src/**/*.scss --fix",
+    "start": "mate-scripts start",
+    "build": "mate-scripts build",
+    "test": "mate-scripts test",
+    "lint-js": "mate-scripts lint -j",
+    "lint-css": "mate-scripts lint -s",
     "lint": "npm run lint-js && npm run lint-css",
+    "update": "mate-scripts update",
+    "postinstall": "npm run update",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -41,8 +47,12 @@
     "extends": "react-app"
   },
   "lint-staged": {
-    "*.css": ["stylelint"],
-    "*.js": ["eslint"]
+    "*.css": [
+      "stylelint"
+    ],
+    "*.js": [
+      "eslint"
+    ]
   },
   "browserslist": {
     "production": [
@@ -60,5 +70,9 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "mateAcademy": {
+    "_comment": "Replace 'reactTypescript' to 'react' if you want use React without Typescript",
+    "projectType": "reactTypescript"
   }
 }
