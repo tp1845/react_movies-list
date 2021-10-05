@@ -21,6 +21,7 @@
     "@mate-academy/scripts": "^0.9.0",
     "@mate-academy/students-ts-config": "*",
     "@mate-academy/stylelint-config": "*",
+    "@mate-academy/eslint-config-react": "*",
     "cypress": "^5.6.0",
     "eslint": "^7.32.0",
     "eslint-plugin-cypress": "^2.11.2",
@@ -73,7 +74,7 @@
     }
   },
   "mateAcademy": {
-    "_comment": "Replace 'reactTypescript' to 'react' if you want use React without Typescript",
+    "_comment": "Replace 'reactTypescript' with 'react' if you want use React without Typescript",
     "projectType": "reactTypescript"
   }
 }
