@@ -12,7 +12,5 @@ You are given movies loaded from API and the initial markup.
 
 ## REQUIREMENTS
 
-- `MovieCard` component should have `data-cy="card"` attribute
-- `title` in the `MovieCard` component should have `data-cy="title"` attribute
-- `description` `title` in the `MovieCard` component should have `data-cy="description"` attribute
-- imbd link `title` in the `MovieCard` should have `data-cy="imbd"` attribute
+- main `div` `MovieCard` component should have a `data-cy="card"` attribute
+- `MovieCard` should pass the props: `title`, `description`, `imbdUrl`, `imgUrl`
