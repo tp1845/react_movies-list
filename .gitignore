@@ -1,6 +1,7 @@
 .idea
 .vscode
 build
+dist
 node_modules
 .DS_Store
 yarn.lock
@@ -10,8 +11,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
 raw_reports
 cypress/screenshots
 cypress/videos
-reports

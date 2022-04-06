@@ -6,35 +6,36 @@
   "author": "Mate Academy",
   "license": "GPL-3.0",
   "dependencies": {
-    "@types/node": "^12.20.18",
-    "@types/react": "^17.0.15",
-    "@types/react-dom": "^17.0.9",
+    "@cypress/react": "^5.12.4",
     "bulma": "^0.9.3",
-    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.3.5"
+    "react-scripts": "^5.0.0"
   },
   "devDependencies": {
+    "@cypress/webpack-dev-server": "^1.8.4",
+    "@mate-academy/cypress-tools": "^1.0.4",
+    "@mate-academy/eslint-config-react": "*",
     "@mate-academy/eslint-config-react-typescript": "*",
-    "@mate-academy/scripts": "^0.9.0",
+    "@mate-academy/scripts": "^1.1.5",
     "@mate-academy/students-ts-config": "*",
     "@mate-academy/stylelint-config": "*",
-    "@mate-academy/eslint-config-react": "*",
-    "cypress": "^5.6.0",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "cypress": "^9.5.3",
     "eslint": "^7.32.0",
     "eslint-plugin-cypress": "^2.11.2",
     "gh-pages": "^3.2.3",
-    "husky": "^4.3.8",
-    "lint-staged": "^11.1.1",
-    "mochawesome": "^6.2.1",
+    "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^5.1.0",
-    "stylelint": "^13.13.1"
+    "mochawesome-report-generator": "^6.2.0",
+    "node-sass": "^7.0.1",
+    "stylelint": "^13.13.1",
+    "typescript": "^4.6.3"
   },
   "scripts": {
-    "start": "mate-scripts start",
+    "start": "mate-scripts start -l",
     "build": "mate-scripts build",
     "test": "mate-scripts test",
     "lint-js": "mate-scripts lint -j",
@@ -43,18 +44,7 @@
     "update": "mate-scripts update",
     "postinstall": "npm run update",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "lint-staged": {
-    "*.css": [
-      "stylelint"
-    ],
-    "*.js": [
-      "eslint"
-    ]
+    "deploy": "mate-scripts deploy"
   },
   "browserslist": {
     "production": [
@@ -68,13 +58,12 @@
       "last 1 safari version"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "mateAcademy": {
     "_comment": "Replace 'reactTypescript' with 'react' if you want use React without Typescript",
-    "projectType": "reactTypescript"
+    "projectType": "reactTypescript",
+    "tests": {
+      "_comment": "Add `cypressComponents: true` to enable component tests",
+      "cypress": true
+    }
   }
 }
