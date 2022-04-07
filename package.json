@@ -17,7 +17,7 @@
     "@mate-academy/cypress-tools": "^1.0.4",
     "@mate-academy/eslint-config-react": "*",
     "@mate-academy/eslint-config-react-typescript": "*",
-    "@mate-academy/scripts": "^1.1.5",
+    "@mate-academy/scripts": "^1.1.8",
     "@mate-academy/students-ts-config": "*",
     "@mate-academy/stylelint-config": "*",
     "@types/node": "^17.0.23",
