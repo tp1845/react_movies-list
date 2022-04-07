@@ -42,7 +42,7 @@
     "lint-css": "mate-scripts lint -s",
     "lint": "npm run lint-js && npm run lint-css",
     "update": "mate-scripts update",
-    "postinstall": "npm run update",
+    "postinstall": "npm run update && cypress verify",
     "predeploy": "npm run build",
     "deploy": "mate-scripts deploy"
   },
