@@ -1,9 +1,7 @@
-describe('Page', () => {
-  before(() => {
-    cy.visit('/');
-  });
+// WRITE TESTS HERE
 
-  it('should contain initial view', () => {
-    cy.document().matchImageSnapshot();
+describe('Page', () => {
+  it('should be visitable', () => {
+    cy.visit('/');
   });
 });
