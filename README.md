@@ -8,4 +8,9 @@ You are given movies loaded from API and the initial markup.
 1. Split the markup into `MoviesList` and `MovieCard` components
 2. `App` should pass the `moviesFromServer` to the `MoviesList` as a prop
 3. `MoviesList` should render a `MovieCard` per each movie
-4. All the fields in the `movie` except the `description` are required
+4. All the fields in the `movie` are required
+
+## REQUIREMENTS
+
+- main `div` `MovieCard` component should have a `data-cy="card"` attribute
+- `MovieCard` should pass the props: `title`, `description`, `imbdUrl`, `imgUrl`
