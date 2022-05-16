@@ -14,6 +14,7 @@ describe('App', () => {
 
   it('should contain initial sidebar', () => {
     mount(<App movies={moviesFromServer} />);
+
     cy.get('.sidebar')
       .should('contain', 'Sidebar will be here');
   });
