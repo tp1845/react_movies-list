@@ -7,7 +7,7 @@ You are given movies loaded from API and the initial markup.
 1. Extract `.movies` block to a `MoviesList` component 
 1. `App` should pass the `moviesFromServer` to the `MoviesList` as a `movies` prop
 1. Extract a `.card` to `MovieCard` component
-1. Add `data-cy="card"` to `div.movies` to pass the tests
+1. Keep `data-cy="card"` on each `.card` to pass the tests
 1. `MoviesList` should pass a `movie` to `MovieCard`
 
 ## Instructions
