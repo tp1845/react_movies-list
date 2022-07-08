@@ -11,6 +11,6 @@ You are given movies loaded from API and the initial markup.
 1. `MoviesList` should pass a `movie` to `MovieCard`
 
 ## Instructions
-- Replace `<your_account>` with your Github username in the
- [DEMO LINK](https://<your_account>.github.io/react_movies-list/)
-- Follow the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline)
+- Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline)
+- Open 1 more terminal and run tests with `npm test` to ensure your solutions is correct
+- Replace `<your_account>` with your Github username in the [DEMO LINK](https://<your_account>.github.io/react_movies-list/) and add it to PR description
