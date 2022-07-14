@@ -1,4 +1,5 @@
 # Movies List
+> [React + Typescript cheatsheet](https://mate-academy.github.io/fe-program/js/extra/react-typescript)
 
 You are given movies loaded from the API and initial markup. Your task is:
 
