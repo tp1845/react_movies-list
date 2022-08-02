@@ -86,3 +86,4 @@ function NumberList(props) {
     </ul>
   );
 ```
+4. [CODE KNOWLEDGE] - NEVER EVER EVER use array index as a `key` prop
