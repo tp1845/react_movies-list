@@ -1,4 +1,4 @@
-1. [CODE KNOWLEDGE] - Don't use React fragment, if you already have wrapper
+1. [CODE KNOWLEDGE] - Don't use React fragment, if you already have a wrapper
 
 BAD EXAMPLE:
 ```jsx
