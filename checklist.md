@@ -29,7 +29,7 @@ ALSO GOOD EXAMPLE:
     ))}
   </>
 ```
-2. [CODE KNOWLEDGE] - When you rendering list, don't forget to add `key` prop
+2. [CODE KNOWLEDGE] - When you rendering a list, don't forget to add `key` prop
 
 BAD EXAMPLE:
 ```jsx
