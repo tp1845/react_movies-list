@@ -1,3 +1,7 @@
+iframe {
+  display: none;
+}
+
 .page {
   display: grid;
   grid-template: auto / 1fr 400px;
